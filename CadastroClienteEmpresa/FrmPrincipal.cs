@@ -19,7 +19,20 @@ namespace CadastroClienteEmpresa
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            // Lógica do botão
+            if (rdBtnCliente.Checked)
+            {
+                // Instancia a classe do FrmCadCliente
+                FrmCadCliente cadCli = new FrmCadCliente();
+
+                // Mostra o fomulário instanciado
+                cadCli.Show();
+            } else { 
+            // Instancia a classe do FrmCadCliente
+                FrmCadEmpresa cadEmp = new FrmCadEmpresa();
+
+                // Mostra o fomulário instanciado
+                cadEmp.Show();
+            }
         }
     }
 }
