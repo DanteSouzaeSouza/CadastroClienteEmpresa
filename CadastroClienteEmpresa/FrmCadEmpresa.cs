@@ -16,5 +16,10 @@ namespace CadastroClienteEmpresa
         {
             InitializeComponent();
         }
+
+        private void FrmCadEmpresa_Load(object sender, EventArgs e)
+        {
+            tabPEdicao.Visible = false;
+        }
     }
 }
