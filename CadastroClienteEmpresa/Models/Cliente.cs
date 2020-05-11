@@ -1,256 +1,65 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CadastroClienteEmpresa.Models
+﻿namespace CadastroClienteEmpresa.Models
 {
-    class Cliente
+    internal class Cliente
     {
-        String nome;
-        String rg;
-        long cpf;
-        String orgaoEmissor;
-        String ufRg;
-        String cEP;
-        String logradouro;
-        int numero;
-        String complemento;
-        String bairro;
-        String cidade;
-        String uf;
-        String pais;
-        String telefone;
-        String celular;
-        String email;
-
-        public Cliente(string nome, string rg, long cpf, string orgaoEmissor, string ufRg, string cEP, string logradouro, int numero, string complemento, string bairro, string cidade, string uf, string pais, string telefone, string celular, string email)
+        public Cliente(string nome, string rg, long cpf, string orgaoEmissor, string ufRg, string cEP,
+            string logradouro, int numero, string complemento, string bairro, string cidade, string uf, string pais,
+            string telefone, string celular, string email)
         {
-            this.nome = nome;
-            this.rg = rg;
-            this.cpf = cpf;
-            this.orgaoEmissor = orgaoEmissor;
-            this.ufRg = ufRg;
-            this.cEP = cEP;
-            this.logradouro = logradouro;
-            this.numero = numero;
-            this.complemento = complemento;
-            this.bairro = bairro;
-            this.cidade = cidade;
-            this.uf = uf;
-            this.pais = pais;
-            this.telefone = telefone;
-            this.celular = celular;
-            this.email = email;
+            Nome = nome;
+            Rg = rg;
+            Cpf = cpf;
+            OrgaoEmissor = orgaoEmissor;
+            UfRg = ufRg;
+            CEP = cEP;
+            Logradouro = logradouro;
+            Numero = numero;
+            Complemento = complemento;
+            Bairro = bairro;
+            Cidade = cidade;
+            Uf = uf;
+            Pais = pais;
+            Telefone = telefone;
+            Celular = celular;
+            Email = email;
         }
 
-        public string Nome
+        public string Nome { get; set; }
+
+        public string Rg { get; set; }
+
+        public long Cpf { get; set; }
+
+        public string OrgaoEmissor { get; set; }
+
+        public string UfRg { get; set; }
+
+        public string CEP { get; set; }
+
+        public string Logradouro { get; set; }
+
+        public int Numero { get; set; }
+
+        public string Complemento { get; set; }
+
+        public string Bairro { get; set; }
+
+        public string Cidade { get; set; }
+
+        public string Uf { get; set; }
+
+        public string Pais { get; set; }
+
+        public string Telefone { get; set; }
+
+        public string Celular { get; set; }
+
+        public string Email { get; set; }
+
+        public override string ToString()
         {
-            get
-            {
-                return nome;
-            }
-
-            set
-            {
-                nome = value;
-            }
-        }
-
-        public string Rg
-        {
-            get
-            {
-                return rg;
-            }
-
-            set
-            {
-                rg = value;
-            }
-        }
-
-        public long Cpf
-        {
-            get
-            {
-                return cpf;
-            }
-
-            set
-            {
-                cpf = value;
-            }
-        }
-
-        public string OrgaoEmissor
-        {
-            get
-            {
-                return orgaoEmissor;
-            }
-
-            set
-            {
-                orgaoEmissor = value;
-            }
-        }
-
-        public string UfRg
-        {
-            get
-            {
-                return ufRg;
-            }
-
-            set
-            {
-                ufRg = value;
-            }
-        }
-
-        public string CEP
-        {
-            get
-            {
-                return cEP;
-            }
-
-            set
-            {
-                cEP = value;
-            }
-        }
-
-        public string Logradouro
-        {
-            get
-            {
-                return logradouro;
-            }
-
-            set
-            {
-                logradouro = value;
-            }
-        }
-
-        public int Numero
-        {
-            get
-            {
-                return numero;
-            }
-
-            set
-            {
-                numero = value;
-            }
-        }
-
-        public string Complemento
-        {
-            get
-            {
-                return complemento;
-            }
-
-            set
-            {
-                complemento = value;
-            }
-        }
-
-        public string Bairro
-        {
-            get
-            {
-                return bairro;
-            }
-
-            set
-            {
-                bairro = value;
-            }
-        }
-
-        public string Cidade
-        {
-            get
-            {
-                return cidade;
-            }
-
-            set
-            {
-                cidade = value;
-            }
-        }
-
-        public string Uf
-        {
-            get
-            {
-                return uf;
-            }
-
-            set
-            {
-                uf = value;
-            }
-        }
-
-        public string Pais
-        {
-            get
-            {
-                return pais;
-            }
-
-            set
-            {
-                pais = value;
-            }
-        }
-
-        public string Telefone
-        {
-            get
-            {
-                return telefone;
-            }
-
-            set
-            {
-                telefone = value;
-            }
-        }
-
-        public string Celular
-        {
-            get
-            {
-                return celular;
-            }
-
-            set
-            {
-                celular = value;
-            }
-        }
-
-        public string Email
-        {
-            get
-            {
-                return email;
-            }
-
-            set
-            {
-                email = value;
-            }
+            return
+                $"{nameof(Nome)}: {Nome}, {nameof(Rg)}: {Rg}, {nameof(Cpf)}: {Cpf}, {nameof(OrgaoEmissor)}: {OrgaoEmissor}, {nameof(UfRg)}: {UfRg}, {nameof(CEP)}: {CEP}, {nameof(Logradouro)}: {Logradouro}, {nameof(Numero)}: {Numero}, {nameof(Complemento)}: {Complemento}, {nameof(Bairro)}: {Bairro}, {nameof(Cidade)}: {Cidade}, {nameof(Uf)}: {Uf}, {nameof(Pais)}: {Pais}, {nameof(Telefone)}: {Telefone}, {nameof(Celular)}: {Celular}, {nameof(Email)}: {Email}";
         }
     }
 }
