@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CadastroClienteEmpresa
@@ -15,6 +8,10 @@ namespace CadastroClienteEmpresa
         public FrmCadCliente()
         {
             InitializeComponent();
+        }
+
+        private void FrmCadCliente_Load(object sender, EventArgs e)
+        {
         }
     }
 }

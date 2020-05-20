@@ -17,16 +17,6 @@
             Pais = pais;
         }
 
-        internal enum TipoEnd
-        {
-            Comercial = 0,
-            Cobrança = 1,
-            Entrega = 2,
-            Faturamento = 3,
-            Residencial = 4,
-            Trabalho = 5
-        }
-
         public string CodEndereco { get; set; }
 
         public TipoEnd TipoEndereco { get; set; }
@@ -46,5 +36,21 @@
         public string Uf { get; set; }
 
         public string Pais { get; set; }
+
+        public override string ToString()
+        {
+            return
+                $"{nameof(CodEndereco)}: {CodEndereco}, {nameof(TipoEndereco)}: {TipoEndereco}, {nameof(CEP)}: {CEP}, {nameof(Logradouro)}: {Logradouro}, {nameof(Numero)}: {Numero}, {nameof(Complemento)}: {Complemento}, {nameof(Bairro)}: {Bairro}, {nameof(Cidade)}: {Cidade}, {nameof(Uf)}: {Uf}, {nameof(Pais)}: {Pais}";
+        }
+
+        internal enum TipoEnd
+        {
+            Comercial = 0,
+            Cobrança = 1,
+            Entrega = 2,
+            Faturamento = 3,
+            Residencial = 4,
+            Trabalho = 5
+        }
     }
 }

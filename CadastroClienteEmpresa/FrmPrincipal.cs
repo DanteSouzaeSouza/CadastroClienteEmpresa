@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CadastroClienteEmpresa
@@ -22,13 +15,15 @@ namespace CadastroClienteEmpresa
             if (rdBtnCliente.Checked)
             {
                 // Instancia a classe do FrmCadCliente
-                FrmCadCliente cadCli = new FrmCadCliente();
+                var cadCli = new FrmCadCliente();
 
                 // Mostra o fomulário instanciado
                 cadCli.Show();
-            } else { 
-            // Instancia a classe do FrmCadCliente
-                FrmCadEmpresa cadEmp = new FrmCadEmpresa();
+            }
+            else
+            {
+                // Instancia a classe do FrmCadCliente
+                var cadEmp = new FrmCadEmpresa();
 
                 // Mostra o fomulário instanciado
                 cadEmp.Show();

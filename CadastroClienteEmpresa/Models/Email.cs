@@ -15,16 +15,16 @@
 
         public TipoEmail TipoDoEmail { get; set; }
 
+        public override string ToString()
+        {
+            return $"{nameof(CodEmail)}: {CodEmail}, {nameof(TipoDoEmail)}: {TipoDoEmail}, {nameof(E_mail)}: {E_mail}";
+        }
+
         internal enum TipoEmail
         {
             Comercial = 0,
             Pessoal = 1,
             Geral = 2
-        }
-
-        public override string ToString()
-        {
-            return $"{nameof(CodEmail)}: {CodEmail}, {nameof(TipoDoEmail)}: {TipoDoEmail}, {nameof(E_mail)}: {E_mail}";
         }
     }
 }

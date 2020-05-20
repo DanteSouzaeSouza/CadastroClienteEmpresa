@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbCEmpresa = new System.Windows.Forms.TabControl();
-            this.tabPCadastro = new System.Windows.Forms.TabPage();
-            this.tbCEmpresa.SuspendLayout();
+            this.gpbCadastroEmp = new System.Windows.Forms.GroupBox();
+            this.gpbEditarEmp = new System.Windows.Forms.GroupBox();
+            this.gpbCadastroEmp.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tbCEmpresa
+            // gpbCadastroEmp
             // 
-            this.tbCEmpresa.Controls.Add(this.tabPCadastro);
-            this.tbCEmpresa.Location = new System.Drawing.Point(9, 1);
-            this.tbCEmpresa.Name = "tbCEmpresa";
-            this.tbCEmpresa.SelectedIndex = 0;
-            this.tbCEmpresa.Size = new System.Drawing.Size(671, 549);
-            this.tbCEmpresa.TabIndex = 1;
+            this.gpbCadastroEmp.Controls.Add(this.gpbEditarEmp);
+            this.gpbCadastroEmp.Location = new System.Drawing.Point(12, 12);
+            this.gpbCadastroEmp.Name = "gpbCadastroEmp";
+            this.gpbCadastroEmp.Size = new System.Drawing.Size(668, 534);
+            this.gpbCadastroEmp.TabIndex = 0;
+            this.gpbCadastroEmp.TabStop = false;
+            this.gpbCadastroEmp.Text = "Cadastrar";
             // 
-            // tabPCadastro
+            // gpbEditarEmp
             // 
-            this.tabPCadastro.Location = new System.Drawing.Point(4, 22);
-            this.tabPCadastro.Name = "tabPCadastro";
-            this.tabPCadastro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPCadastro.Size = new System.Drawing.Size(663, 523);
-            this.tabPCadastro.TabIndex = 0;
-            this.tabPCadastro.Text = "Dados";
-            this.tabPCadastro.UseVisualStyleBackColor = true;
+            this.gpbEditarEmp.Location = new System.Drawing.Point(654, 43);
+            this.gpbEditarEmp.Name = "gpbEditarEmp";
+            this.gpbEditarEmp.Size = new System.Drawing.Size(668, 534);
+            this.gpbEditarEmp.TabIndex = 1;
+            this.gpbEditarEmp.TabStop = false;
+            this.gpbEditarEmp.Text = "Editar";
             // 
             // FrmCadEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 558);
-            this.Controls.Add(this.tbCEmpresa);
+            this.Controls.Add(this.gpbCadastroEmp);
             this.Name = "FrmCadEmpresa";
             this.Text = "Cadastro de Empresa";
             this.Load += new System.EventHandler(this.FrmCadEmpresa_Load);
-            this.tbCEmpresa.ResumeLayout(false);
+            this.gpbCadastroEmp.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tbCEmpresa;
-        private System.Windows.Forms.TabPage tabPCadastro;
+        private System.Windows.Forms.GroupBox gpbCadastroEmp;
+        private System.Windows.Forms.GroupBox gpbEditarEmp;
     }
 }
